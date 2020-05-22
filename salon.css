@@ -1,0 +1,1117 @@
+body {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+}
+
+.overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(41, 23, 23, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.carousel-item {
+  max-height: 700px;
+}
+
+#header .navbar-toggler {
+  border: none;
+  color: white;
+}
+
+#header .navbar-toggler:focus {
+  outline: none;
+}
+
+#header .navbar-collapse {
+  border: none;
+}
+
+#header .navbar-toggler-icon {
+  color: white;
+}
+
+#header .header-content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+  margin-top: 180px;
+  max-width: 700px;
+  padding: 75px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+}
+
+#header .header-content h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+#header .header-content .lead {
+  line-height: 2;
+}
+
+#header .header-content .apisa {
+  background: goldenrod;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  color: white;
+  transition: 0.2s;
+}
+
+#header .header-content .apisa:hover {
+  background: black;
+  color: goldenrod;
+}
+
+#about .jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(imgs/beauties12.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  border-radius: 0%;
+}
+
+#about .jumbotron .linne {
+  width: 75px;
+  /* margin-top: 5px; */
+  border-bottom: 3px solid goldenrod;
+}
+
+#about .jumbotron .lead {
+  line-height: 2;
+}
+
+#about .what-we .lead {
+  line-height: 2;
+}
+
+#about .boxs {
+  background: white;
+  color: grey;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.what-we hr {
+  width: 600px;
+}
+
+.what-we .apisa {
+  background: goldenrod;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 15px;
+  color: white;
+  transition: 0.2s;
+}
+
+.what-we .apisa:hover {
+  background: black;
+  color: goldenrod;
+}
+
+#about .jumpo {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(imgs/beauties14.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+#about .jumpo h3 {
+  color: gold;
+}
+
+#about .jumpo .fa {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  color: goldenrod;
+}
+
+#about .jumpo img {
+  height: 150px;
+  width: 150px;
+  background: goldenrod;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#services .linne {
+  margin: 0 auto;
+  width: 75px;
+  /* margin-bottom: 5px; */
+  border-bottom: 3px solid goldenrod;
+}
+
+#services .hairstyle {
+  position: relative;
+}
+
+#services .style {
+  box-sizing: border-box;
+}
+#services img {
+  width: 100%;
+  height: 100%;
+}
+
+#services .row .hair-style {
+  position: relative;
+}
+
+#services .row .hair-style:hover .overlay {
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+#services .overlay h3 {
+  display: none;
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 217, 0, 0.397);
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#services .row .hair-style:hover .overlay h3 {
+  display: block;
+}
+
+#magazine .linn {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid goldenrod;
+}
+
+#magazine .gallery {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+}
+
+#magazine .gallery .img:hover .overlappe {
+  /* height: 100%; */
+  display: block;
+}
+
+.overlappe {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 20;
+  transition: 0.5s linear;
+}
+
+#magazine .gallery .img {
+  position: relative;
+  /* background: grey; */
+  height: minmax(100px, auto);
+  width: 100%;
+  overflow: hidden;
+}
+
+#magazine .gallery img {
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-sizing: border-box;
+}
+
+#magazine .gallery .img1 img {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img2 img {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img3 img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img4 img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img5 img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img6 img {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img7 img {
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+#magazine .gallery .img8 img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+#magazine .img1 {
+  grid-column: 1/3;
+  grid-row: 1/5;
+}
+
+#magazine .img2 {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+#magazine .img3 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+
+#magazine .img4 {
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+
+#magazine .img5 {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+#magazine .img6 {
+  grid-column: 3/4;
+  grid-row: 4/7;
+}
+
+#magazine .img7 {
+  grid-column: 4/5;
+  grid-row: 5/7;
+}
+
+#magazine .img8 {
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
+
+#footer {
+  border: 2px solid black;
+  padding: 20px;
+  /* margin-top: 30px; */
+  overflow-x: hidden;
+  background: black;
+  color: gold;
+  margin: 0;
+}
+
+hr {
+  color: gold;
+}
+
+#footer .serva {
+  line-height: 2;
+  /* list-style: none; */
+}
+
+#footer .infr {
+  line-height: 2;
+  list-style: none;
+}
+
+#footer .infr i {
+  padding: 10px;
+}
+
+.navbar.scrolled {
+  background: goldenrod;
+  /* background: rgba(255, 215, 0, 0.9); */
+  transition: 500ms;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item {
+    max-height: 300px;
+  } */
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 150px;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 990px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 150px;
+    max-width: 700px;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img2 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img6 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img7 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img8 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  #magazine .img3 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img6 {
+    grid-column: 3/4;
+    grid-row: 5/7;
+  }
+
+  #magazine .img7 {
+    grid-column: 1/3;
+    grid-row: 6/9;
+  }
+
+  #magazine .img8 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+  }
+}
+
+@media (max-width: 812px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 100px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img2 img {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img6 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img7 img {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img8 img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  #magazine .img3 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img6 {
+    grid-column: 3/4;
+    grid-row: 5/7;
+  }
+
+  #magazine .img7 {
+    grid-column: 1/3;
+    grid-row: 6/9;
+  }
+
+  #magazine .img8 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img2 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img3 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+  }
+
+  #magazine .img6 {
+    display: none;
+  }
+
+  #magazine .img7 {
+    display: none;
+  }
+
+  #magazine .img8 {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 568px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .navbar {
+    margin-right: 250px;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img2 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img3 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+  }
+
+  #magazine .img6 {
+    display: none;
+  }
+
+  #magazine .img7 {
+    display: none;
+  }
+
+  #magazine .img8 {
+    display: none;
+  }
+}
