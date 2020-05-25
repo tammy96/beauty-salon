@@ -1,8 +1,13 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -294,7 +299,7 @@ body {
 #magazine .gallery .img4 img {
   position: absolute;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -309,7 +314,7 @@ body {
   position: absolute;
   width: 100%;
   height: 70vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #magazine .gallery .img7 img {
@@ -369,7 +374,7 @@ body {
 #footer {
   border: 2px solid black;
   padding: 20px;
-  /* margin-top: 30px; */
+  margin: 0;
   overflow-x: hidden;
   background: black;
   color: gold;
@@ -402,8 +407,19 @@ hr {
 
 @media (max-width: 1200px) {
   body {
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
     overflow-y: scroll;
+  }
+
+  /* .navbar .container {
+    max-width: 970px;
+
+  } */
+
+  .navbar {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .main {
@@ -417,6 +433,7 @@ hr {
 
 @media (max-width: 1024px) {
   body {
+    max-width: 100%;
     overflow-x: hidden;
   }
 
@@ -432,10 +449,132 @@ hr {
     margin-top: 150px;
     max-width: 700px;
   }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    /* background: grey; */
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    /* background: rgba(0, 0, 0, 0.5); */
+    box-sizing: border-box;
+  }
+
+  #magazine .gallery .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img2 img {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img6 img {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+  }
+
+  #magazine .gallery .img7 img {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img8 img {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/5;
+  }
+
+  #magazine .img2 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+
+  #magazine .img3 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+
+  #magazine .img5 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+  }
+
+  #magazine .img6 {
+    grid-column: 3/4;
+    grid-row: 4/7;
+  }
+
+  #magazine .img7 {
+    grid-column: 4/5;
+    grid-row: 5/7;
+  }
+
+  #magazine .img8 {
+    grid-column: 2/3;
+    grid-row: 5/7;
+  }
 }
 
 @media (max-width: 990px) {
   body {
+    max-width: 100%;
     overflow-x: hidden;
   }
 
@@ -479,7 +618,7 @@ hr {
   #magazine .gallery .img1 img {
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
   }
 
@@ -573,8 +712,9 @@ hr {
   }
 }
 
-@media (max-width: 812px) {
+@media (max-width: 823px) {
   body {
+    /* max-width: 100%; */
     overflow-x: hidden;
   }
 
@@ -738,12 +878,397 @@ hr {
 
 @media (max-width: 768px) {
   body {
+    /* max-width: 100%; */
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    /* height: minmax(100px, auto); */
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  #magazine .gallery .img2 img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img6 img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #magazine .gallery .img7 img {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: fill; */
+  }
+
+  #magazine .gallery .img8 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+  }
+
+  #magazine .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  #magazine .img3 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img6 {
+    grid-column: 3/4;
+    grid-row: 5/7;
+  }
+
+  #magazine .img7 {
+    grid-column: 1/3;
+    grid-row: 6/9;
+  }
+
+  #magazine .img8 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    /* max-width: 100%; */
     overflow-x: hidden;
     overflow-y: scroll;
   }
 
   .main {
     position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 568px) {
+  body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  /* .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  } */
+
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #header .header-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
+  #header .header-content h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  #header .header-content .lead {
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  #header .header-content .apisa {
+    background: goldenrod;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  #header .header-content .apisa:hover {
+    background: black;
+    color: goldenrod;
+  }
+
+  #magazine .gallery {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+  #magazine .gallery .img {
+    position: relative;
+    background: grey;
+    height: minmax(100px, auto);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #magazine .gallery img {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #magazine .gallery .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img4 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img5 img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #magazine .img2 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  #magazine .img6 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  #magazine .img1 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+
+  #magazine .img3 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #magazine .img4 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+
+  #magazine .img5 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+  }
+
+  /* #magazine .img6 {
+    display: none;
+  } */
+
+  #magazine .img7 {
+    display: none;
+  }
+
+  #magazine .img8 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .navbar {
+    margin-right: 250px;
   }
 
   /* .carousel-item img {
@@ -871,168 +1396,7 @@ hr {
   }
 }
 
-@media (max-width: 640px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  .main {
-    position: relative;
-  }
-
-  /* .carousel-item img {
-    height: 80vh;
-    object-fit: cover;
-  } */
-
-  .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  #header .header-content {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 50px;
-    max-width: 700px;
-  }
-
-  #header .header-content h1 {
-    font-size: 2rem;
-    font-weight: 200;
-  }
-
-  #header .header-content .lead {
-    line-height: 1.3;
-    margin-bottom: 25px;
-  }
-
-  #header .header-content .apisa {
-    background: goldenrod;
-    text-decoration: none;
-    list-style: none;
-    padding: 10px;
-    color: white;
-    transition: 0.2s;
-  }
-
-  #header .header-content .apisa:hover {
-    background: black;
-    color: goldenrod;
-  }
-}
-
-@media (max-width: 568px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  .main {
-    position: relative;
-  }
-
-  /* .carousel-item img {
-    height: 80vh;
-    object-fit: cover;
-  } */
-
-  .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  #header .header-content {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 50px;
-    max-width: 700px;
-  }
-
-  #header .header-content h1 {
-    font-size: 1.5rem;
-    font-weight: 200;
-  }
-
-  #header .header-content .lead {
-    line-height: 1.2;
-    margin-bottom: 25px;
-  }
-
-  #header .header-content .apisa {
-    background: goldenrod;
-    text-decoration: none;
-    list-style: none;
-    padding: 10px;
-    color: white;
-    transition: 0.2s;
-  }
-
-  #header .header-content .apisa:hover {
-    background: black;
-    color: goldenrod;
-  }
-}
-
-@media (max-width: 400px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  .main {
-    position: relative;
-  }
-
-  .navbar {
-    margin-right: 250px;
-  }
-
-  /* .carousel-item img {
-    height: 80vh;
-    object-fit: cover;
-  } */
-
-  .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  #header .header-content {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 50px;
-    max-width: 700px;
-  }
-
-  #header .header-content h1 {
-    font-size: 2rem;
-    font-weight: 200;
-  }
-
-  #header .header-content .lead {
-    line-height: 1.3;
-    margin-bottom: 25px;
-  }
-
-  #header .header-content .apisa {
-    background: goldenrod;
-    text-decoration: none;
-    list-style: none;
-    padding: 10px;
-    color: white;
-    transition: 0.2s;
-  }
-
-  #header .header-content .apisa:hover {
-    background: black;
-    color: goldenrod;
-  }
-
+@media (max-width: 360px) {
   #magazine .gallery {
     position: relative;
     padding: 10px;
@@ -1057,24 +1421,31 @@ hr {
     background: rgba(0, 0, 0, 0.5);
   }
 
-  #magazine .gallery .img3 img {
+  #magazine .gallery .img1 img {
     position: absolute;
     width: 100%;
     height: 50vh;
+    object-fit: cover;
+  }
+
+  #magazine .gallery .img3 img {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
     object-fit: cover;
   }
 
   #magazine .gallery .img4 img {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
   }
 
   #magazine .gallery .img5 img {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
   }
 
