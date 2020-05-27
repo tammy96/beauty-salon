@@ -62,24 +62,25 @@
 
             <div class="collapse navbar-collapse" id="navLinks">
               <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item">
-                  <a href="" class="nav-link text-white">HOME</a>
+                <li class="nav-item active"> 
+                  <a href="" class="nav-link text-white">HOME
+                    <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="#about" class="nav-link text-white">ABOUT</a>
+                  <a href="#about"  class="nav-link text-white">ABOUT</a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link text-white">SERVICES</a>
+                  <a href="#services"  class="nav-link text-white">SERVICES</a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link text-white">MAGAZINE</a>
+                  <a href="#magazine"  class="nav-link text-white">MAGAZINE</a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link text-white">CONTACT</a>
+                  <a href="#contact"  class="nav-link text-white">CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -591,6 +592,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript">
+      $('.navbar-nav>li>a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+    </script>
 
     <script>
       $(function () {
