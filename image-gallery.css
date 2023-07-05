@@ -1,0 +1,141 @@
+@media(min-width: 900px){
+    #magazine .linn {
+        margin: 0 auto;
+        width: 100px;
+        border-bottom: 3px solid goldenrod;
+        }
+          
+        #magazine .gallery {
+        position: relative;
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+        }
+          
+          #magazine .gallery .img:hover .overlappe {
+            /* height: 100%; */
+            display: block;
+          }
+          
+          .overlappe {
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            z-index: 20;
+            transition: 0.5s linear;
+          }
+          
+          #magazine .gallery .img {
+            position: relative;
+            /* background: grey; */
+            height: minmax(100px, auto);
+            width: 100%;
+            overflow: hidden;
+          }
+          
+          #magazine .gallery img {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            width: 100%;
+            object-fit: cover;
+          }
+          
+          #magazine .img1 {
+            grid-column: 1/3;
+            grid-row: 1/5;
+          }
+          
+          #magazine .img2 {
+            grid-column: 3/4;
+            grid-row: 1/4;
+          }
+          
+          #magazine .img3 {
+            grid-column: 4/5;
+            grid-row: 1/3;
+          }
+          
+          #magazine .img4 {
+            grid-column: 1/2;
+            grid-row: 5/7;
+          }
+          
+          #magazine .img5 {
+            grid-column: 4/5;
+            grid-row: 3/5;
+          }
+          
+          #magazine .img6 {
+            grid-column: 3/4;
+            grid-row: 4/7;
+          }
+          
+          #magazine .img7 {
+            grid-column: 4/5;
+            grid-row: 5/7;
+          }
+          
+          #magazine .img8 {
+            grid-column: 2/3;
+            grid-row: 5/7;
+          }
+}
+
+@media(max-width: 900px){
+    #magazine .linn {
+        margin: 0 auto;
+        width: 100px;
+        border-bottom: 3px solid goldenrod;
+        }
+          
+        #magazine .gallery {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+        }
+
+        #magazine .gallery .img{
+            width: 150px;
+            height: 150px;
+        }
+
+        #magazine .gallery .img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+          
+          #magazine .gallery .img:hover .overlappe {
+            /* height: 100%; */
+            display: block;
+          }
+          
+          .overlappe {
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            z-index: 20;
+            transition: 0.5s linear;
+          }
+}
